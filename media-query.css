@@ -182,6 +182,11 @@
   .bar {
     transition: 0.2s ease;
   }
+  
+  .asection-5-container p {
+  font-size: 0.8rem;
+  text-align: justify;
+}
 }
 
 @media (max-width: 607px) {
