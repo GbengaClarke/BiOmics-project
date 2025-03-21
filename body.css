@@ -335,7 +335,6 @@ body {
   position: absolute;
   top: 17.6rem;
   color: black;
-  z-index: 1000;
 }
 
 .blog-post-grid {
