@@ -145,6 +145,10 @@
     display: flex;
   }
 
+  .header-list-container ul li::after {
+    display: none;
+  }
+
   .header-list-container ul {
     display: flex;
     flex-direction: column;
@@ -155,7 +159,8 @@
     bottom: 0;
     width: 80%;
     text-align: left;
-    gap: 1rem;
+    gap: 2rem;
+    font-size: 1rem;
     padding: 3rem;
     transition: right 0.3s ease;
   }
@@ -201,7 +206,7 @@
 
 @media (max-width: 562px) {
   .contents h4 {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
 }
 
@@ -215,7 +220,7 @@
   }
 
   .contents h4 {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
   }
 }
 
