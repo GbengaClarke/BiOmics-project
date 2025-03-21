@@ -642,7 +642,8 @@ body {
   object-fit: cover;
 }
 
-.testimony-post p {
+.testimony-post p,
+.atestimony-post p {
   font-size: 0.7rem;
   text-align: left;
   font-style: normal;
