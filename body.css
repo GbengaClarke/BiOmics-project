@@ -158,6 +158,7 @@ body {
 .section-6 h2 {
   font-size: 1.3rem;
   text-align: center;
+  letter-spacing: 1px;
   color: var(--dark-blue);
   font-family: var(--bebas-font);
 }
@@ -181,21 +182,21 @@ body {
   overflow: hidden;
   cursor: pointer;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-  transition: all 0.14s ease;
+  transition: box-shadow 0.14s ease, transform 0.14s ease,
+    background-color 0.14s ease;
 }
 
 .grid .research-areas .img-container {
   overflow: hidden;
   width: 100%;
   height: 15rem;
-  hight: 80%;
 }
 
 .grid .research-areas img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: all 1s ease;
+  transition: transform 1s ease;
 }
 
 .research-text-container {
@@ -211,6 +212,7 @@ body {
   font-size: 1.2rem;
   font-family: var(--bebas-font);
   color: var(--dark-blue);
+  letter-spacing: 1px;
 }
 
 .grid .research-text-container p {
@@ -260,7 +262,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: all 1s ease;
 }
 
 .facilities-grid .facilities-text-container {
@@ -276,6 +277,7 @@ body {
   font-size: 1.2rem;
   font-family: var(--bebas-font);
   color: var(--dark-blue);
+  letter-spacing: 1px;
 }
 
 .facilities-grid .facilities-text-container p {
@@ -319,7 +321,7 @@ body {
   padding: 0.4rem 0.5rem;
   border-radius: 1rem;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 .categories p:hover {
@@ -356,7 +358,7 @@ body {
   height: 100%;
   object-fit: cover;
   cursor: pointer;
-  transition: all 1s ease;
+  transition: transform 1s ease;
   vertical-align: middle;
 }
 
@@ -364,15 +366,11 @@ body {
   transform: scale(1.2);
 }
 
-/* .big-grid-container .img:hover{
-    transform: scale(1.2);
-  } */
-
 .blog-post-grid .small-grid-container img {
   width: 100%;
   height: 10rem;
   object-fit: cover;
-  transition: all 1s ease;
+  transition: transform 1s ease;
   vertical-align: middle;
 }
 
@@ -535,6 +533,7 @@ body {
   text-align: center;
   color: var(--vibrant-yellow);
   font-family: var(--bebas-font);
+  letter-spacing: 1px;
 }
 
 .section-5-container {
@@ -568,7 +567,8 @@ body {
   margin-bottom: 0.7rem;
 }
 
-.section-5-container p {
+.section-5-container p,
+.asection-5-container p {
   font-size: 0.8rem;
   text-align: justify;
 }
@@ -582,19 +582,20 @@ body {
   color: var(--vibrant-yellow);
   background-color: var(--dark-blue);
   border: 2px solid #fca311;
-  font-weight: 600;
+  font-weight: 700;
   padding: 0.5rem 0.5rem;
   border-radius: 4px;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 .about-us-button-container {
   margin-top: 1rem;
-  transition: all 0.15s ease;
   max-width: max-content;
 }
 
 .about-us-button-container .buttonn:hover {
-  background-color: rgba(255, 255, 255, 0.125);
+  background-color: var(--vibrant-yellow);
+  color: var(--dark-blue);
 }
 
 .testimonial-container {
