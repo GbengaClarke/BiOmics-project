@@ -1,0 +1,135 @@
+:root {
+  --dark-blue: #0d2862;
+  --lighter-blue: #457b9d;
+  --cyan: #a8dadc;
+  --lightest-color: #f1faee;
+  --vibrant-yellow: #fca311;
+  --wine: #9a031e;
+
+  --bebas-font: Bebas Neue, sans-serif;
+  --poppins-font: poppins, sans-serif;
+  --orbitron-font: Orbitron, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--poppins-font);
+}
+
+header {
+  background-color: var(--dark-blue);
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.company-logo-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 4%;
+  cursor: pointer;
+}
+
+.company-logo-container img {
+  height: 25px;
+  width: 25px;
+}
+
+.company-logo-container p {
+  font-size: 1.4rem;
+  font-family: var(--orbitron-font);
+  color: var(--vibrant-yellow);
+}
+
+.company-logo-container span {
+  font-size: 1.4rem;
+  font-family: var(--poppins-font);
+  color: var(--cyan);
+}
+
+.header-list-container {
+  display: flex;
+  margin-right: 3%;
+}
+
+.header-list-container ul {
+  display: flex;
+  white-space: nowrap;
+  flex: 1;
+  list-style: none;
+  text-align: center;
+  font-size: 0.8rem;
+  gap: 1rem;
+}
+
+.header-list-container ul a {
+  color: white;
+}
+
+.header-list-container ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: var(--vibrant-yellow);
+  display: block;
+  margin: auto;
+  transition: 0.15s;
+}
+
+.header-list-container ul li:hover::after {
+  width: 100%;
+}
+
+.header-list-container a:hover {
+  color: var(--cyan);
+}
+
+.header-list-container ul a:active {
+  color: var(--vibrant-yellow);
+}
+
+#toggle-menu {
+  display: none;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  z-index: 200;
+  display: none;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+}
+
+#toggle-menu:checked ~ ul {
+  right: 0;
+}
+
+#toggle-menu:checked ~ .hamburger .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-8.5px, 10px);
+}
+
+#toggle-menu:checked ~ .hamburger .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#toggle-menu:checked ~ .hamburger .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-3px, -4px);
+}

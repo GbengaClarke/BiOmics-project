@@ -1,0 +1,252 @@
+:root {
+  --dark-blue: #0d2862;
+  --lighter-blue: #457b9d;
+  --cyan: #a8dadc;
+  --lightest-color: #f1faee;
+  --vibrant-yellow: #fca311;
+  --wine: #9a031e;
+
+  --bebas-font: Bebas Neue, sans-serif;
+  --poppins-font: poppins, sans-serif;
+  --orbitron-font: Orbitron, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1280px) {
+  .total-hero-container p {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1107px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .blog-post-grid {
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem 3rem;
+  }
+
+  .big-grid-container {
+    grid-row: span 1;
+    grid-column: span 1;
+    max-width: 100%;
+    margin-ottom: 2rem;
+  }
+
+  .image-grow-constrictor {
+    height: auto;
+  }
+
+  .blog-post-grid .contents {
+    display: none;
+  }
+
+  .big-grid-container .small-grid-contents {
+    display: block;
+  }
+
+  .blog-post-grid .small-grid-container img,
+  .blog-post-grid .big-grid-container img {
+    height: 20rem;
+  }
+
+  .featured-posts {
+    display: none;
+  }
+}
+
+@media (min-width: 940px) and (max-width: 1279px) {
+  .total-hero-container p {
+    width: 76%;
+  }
+}
+
+@media (min-width: 803px) and (max-width: 1038px) {
+  .line-break {
+    display: contents;
+  }
+}
+
+@media (max-width: 707px) {
+  .facilities-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .section-2 p,
+  .section-3 p {
+    font-size: 0.8rem;
+  }
+
+  .blog-post-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .big-grid-container {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+
+  .blog-post-grid .small-grid-container img {
+    height: 18rem;
+  }
+
+  .blog-post-grid .small-grid-container {
+    margin-bottom: 2rem;
+  }
+
+  .section-5-container {
+    align-items: center; /* not sure */
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .asection-5-container {
+    align-items: center; /* not sure */
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .section-5-container .left-portion {
+    width: 100%;
+  }
+
+  .asection-5-container .left-portion {
+    width: 100%;
+  }
+
+  .section-5-container .right-portion {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .asection-5-container .right-portion {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .submit-button {
+    width: 50%;
+  }
+}
+
+@media (max-width: 660px) {
+  header {
+    height: 3.5rem;
+  }
+
+  .pages-hero {
+    height: 40vh;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .bar {
+    width: 35px;
+    height: 4px;
+    background-color: white;
+  }
+
+  .header-list-container ul li::after {
+    display: none;
+  }
+
+  .header-list-container ul {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-blue);
+    position: fixed;
+    top: 0;
+    right: -90%;
+    bottom: 0;
+    width: 80%;
+    text-align: left;
+    gap: 2rem;
+    font-size: 1rem;
+    padding: 3rem;
+    transition: right 0.3s ease;
+  }
+
+  .header-list-container ul a:active {
+    color: var(--vibrant-yellow);
+  }
+
+  .bar {
+    transition: 0.2s ease;
+  }
+}
+
+@media (max-width: 607px) {
+  .total-testimony-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .testimony-post {
+    padding: 1rem;
+  }
+
+  .atestimony-post {
+    padding: 1rem;
+  }
+  .contact-portion-container {
+    flex-direction: column;
+  }
+
+  .submit-button {
+    /* width: 100%; 50% */
+    margin-top: 0.7rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .post-category-display {
+    display: none;
+  }
+}
+
+@media (max-width: 562px) {
+  .contents h4 {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 464px) {
+  .total-hero-container h1 {
+    font-size: 1.3rem;
+  }
+
+  .total-hero-container p {
+    font-size: 0.9rem;
+  }
+
+  .contents h4 {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 401px) {
+  .total-hero-container h1 {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 356px) {
+  .total-hero-container h1 {
+    font-size: 1rem;
+  }
+
+  .total-hero-container p {
+    font-size: 0.8rem;
+    width: 90%;
+  }
+}
